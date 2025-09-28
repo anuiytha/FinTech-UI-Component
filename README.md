@@ -4,40 +4,40 @@ A collection of React + TypeScript UI components designed specifically for finan
 
 # Components Overview
 1. Onboarding Stepper
-- Personal Information: Legal name, DOB, contact details, SSN
-- Identity Verification: Document upload, selfie verification, phone verification
-- Risk Assessment: Risk tolerance, investment experience, time horizon
-- Investment Goals: Financial objectives, return expectations, liquidity needs
-- Account Setup: Security questions, 2FA setup, trusted contacts
+   - Personal Information: Legal name, DOB, contact details, SSN
+   - Identity Verification: Document upload, selfie verification, phone verification
+   - Risk Assessment: Risk tolerance, investment experience, time horizon
+   - Investment Goals: Financial objectives, return expectations, liquidity needs
+   - Account Setup: Security questions, 2FA setup, trusted contacts
 
 2. Identity Verification
 KYC-compliant identity verification featuring:
-- Government ID document upload
-- Selfie verification for identity matching
-- SMS phone number verification
-- Real-time validation feedback
-- Progress tracking
+   - Government ID document upload
+   - Selfie verification for identity matching
+   - SMS phone number verification
+   - Real-time validation feedback
+   - Progress tracking
 
 3. Strategy Selection Cards (Planned)
 Interactive investment strategy selection with:
-- Multiple risk-based strategies
-- Hover effects and selection states
-- Expected return ranges
-- Feature comparison
+   - Multiple risk-based strategies
+   - Hover effects and selection states
+   - Expected return ranges
+   - Feature comparison
 
 4. Portfolio Performance Tiles (Planned)
 Financial dashboard components with:
-- Real-time portfolio values
-- Performance charts and indicators
-- Trend analysis
-- Responsive data visualization
+   - Real-time portfolio values
+   - Performance charts and indicators
+   - Trend analysis
+   - Responsive data visualization
 
 ## Tech Stack
-- React 18 - Modern React with hooks
-- TypeScript - Type-safe development
-- Tailwind CSS v3 - Utility-first CSS framework
-- Lucide React - Beautiful, customizable icons
-- Vite - Fast development and build tool
+   - React 18 - Modern React with hooks
+   - TypeScript - Type-safe development
+   - Tailwind CSS v3 - Utility-first CSS framework
+   - Lucide React - Beautiful, customizable icons
+   - Vite - Fast development and build tool
 
 ## Getting Started
 - Prerequisites
