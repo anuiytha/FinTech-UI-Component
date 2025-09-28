@@ -2,6 +2,8 @@
 
 A collection of React + TypeScript UI components designed specifically for finanical technology applications. Built with enterprise-grade features including comprehensive Onboarding flows, Strategy selections and Portfolio Performance.
 
+https://github.com/user-attachments/assets/c4ef76a6-555c-4713-8ba6-589b32b773d4
+
 # Components Overview
 1. Onboarding Stepper
    - Personal Information: Legal name, DOB, contact details, SSN
