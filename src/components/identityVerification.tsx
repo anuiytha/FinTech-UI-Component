@@ -58,21 +58,21 @@ const IdentityVerification: React.FC = () => {
                 </p>
             </div>
 
-            {/* Verification Steps */}
+            {/* This is the Verification Steps */}
             <div className="space-y-4">
                 {verificationSteps.map((step) => (
                     <div
                         key={step.id}
                         className={`border rounded-lg p-4 transition-all ${step.completed
-                                ? 'border-green-200 bg-green-50'
-                                : 'border-gray-200 hover:border-gray-300'
+                            ? 'border-green-200 bg-green-50'
+                            : 'border-gray-200 hover:border-gray-300'
                             }`}
                     >
                         <div className="flex items-start space-x-4">
-                            {/* Step Icon */}
+                            {/* This is the Step Icon */}
                             <div className={`w-10 h-10 rounded-full flex items-center justify-center ${step.completed
-                                    ? 'bg-green-500'
-                                    : 'bg-blue-100'
+                                ? 'bg-green-500'
+                                : 'bg-blue-100'
                                 }`}>
                                 {step.completed ? (
                                     <Check className="w-5 h-5 text-white" />
@@ -85,7 +85,7 @@ const IdentityVerification: React.FC = () => {
                                 )}
                             </div>
 
-                            {/* Step Content */}
+                            {/* This is the Step Content */}
                             <div className="flex-1">
                                 <div className="flex items-center space-x-2 mb-1">
                                     <h4 className="font-medium text-gray-900">{step.title}</h4>
@@ -95,7 +95,7 @@ const IdentityVerification: React.FC = () => {
                                 </div>
                                 <p className="text-gray-600 text-sm mb-3">{step.description}</p>
 
-                                {/* Step Actions */}
+                                {/* This is the Step Actions */}
                                 {!step.completed && (
                                     <div>
                                         {step.id === 'id-upload' && (
@@ -139,7 +139,7 @@ const IdentityVerification: React.FC = () => {
                                     </div>
                                 )}
 
-                                {/* Completed State */}
+                                {/* This is the Completed State */}
                                 {step.completed && (
                                     <div className="flex items-center text-green-600">
                                         <Check className="w-4 h-4 mr-1" />
@@ -152,7 +152,7 @@ const IdentityVerification: React.FC = () => {
                 ))}
             </div>
 
-            {/* Progress Indicator */}
+            {/* This is the Progress Indicator */}
             <div className="mt-6 p-4 bg-gray-50 rounded-lg">
                 <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-600">

@@ -85,12 +85,6 @@ function App() {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-8">
         <div className="max-w-6xl mx-auto space-y-12">
 
-          {/* <div className="text-center">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">FinTech Components</h1>
-            <p className="text-gray-600">
-              Professional UI components for financial apps</p>
-          </div> */}
-
           <section>
             <div className="flex justify-center">
               <OnboardingStepper />

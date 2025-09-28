@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Check, ArrowRight } from 'lucide-react';
-import IdentityVerification from './identityVerification'; // Make sure this file exists
+import IdentityVerification from './identityVerification';
 
 interface PersonalInfo {
     fullLegalName: string;
@@ -100,10 +100,10 @@ const OnboardingStepper: React.FC = () => {
         trustedContactRelationship: '',
     });
 
-    // Updated steps array with identity verification
+
     const steps = [
         { id: 1, title: "Personal Info", description: "Tell us about yourself", completed: false },
-        { id: 2, title: "Identity Verification", description: "Verify your identity", completed: false }, // New step
+        { id: 2, title: "Identity Verification", description: "Verify your identity", completed: false },
         { id: 3, title: "Risk Assessment", description: "Understand your risk tolerance", completed: false },
         { id: 4, title: "Investment Goals", description: "Set your financial objectives", completed: false },
         { id: 5, title: "Account Setup", description: "Complete your account", completed: false },
@@ -147,9 +147,9 @@ const OnboardingStepper: React.FC = () => {
             personalInfo.socialSecurityNumber.trim() !== '';
     };
 
-    // Step 2 is identity verification - no validation needed (handled internally)
+    // SThis is the STEP 2 Identity Verification
     const isStep2Valid = () => {
-        return true; // Identity verification component handles its own validation
+        return true;
     };
 
     const isStep3Valid = () => {
@@ -189,20 +189,20 @@ const OnboardingStepper: React.FC = () => {
             case 3: return isStep3Valid();
             case 4: return isStep4Valid();
             case 5: return isStep5Valid();
-            case 6: return true; // Completion step is always valid
+            case 6: return true;
             default: return false;
         }
     };
 
     return (
-        <div className="bg-white rounded-xl shadow-lg p-5 max-w-4xl mx-auto"> {/* Made wider */}
-            {/* Welcome Section */}
+        <div className="bg-white rounded-xl shadow-lg p-5 max-w-4xl mx-auto">
+            {/* This is the Welcome Section */}
             <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to Relentless Returns</h2>
                 <p className="text-gray-600">Let's get your investment account set up in just a few steps</p>
             </div>
 
-            {/* Progress Steps */}
+            {/* This shows the Progress Steps */}
             <div className="flex items-center mb-8">
                 {steps.map((step, index) => (
                     <React.Fragment key={step.id}>
@@ -216,7 +216,7 @@ const OnboardingStepper: React.FC = () => {
                                 {step.id < currentStep || (step.id === 6 && currentStep === 6) ? <Check size={18} /> : step.id}
                             </div>
 
-                            {/* Step labels */}
+                            {/* This is the Step labels */}
                             <div className="text-center mt-3">
                                 <div className={`text-sm font-medium ${step.id <= currentStep ? 'text-gray-900' : 'text-gray-600'
                                     }`}>
@@ -226,7 +226,7 @@ const OnboardingStepper: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Connection lines */}
+                        {/* This is the Connection lines */}
                         {index < steps.length - 1 && (
                             <div className={`flex-1 h-0.5 mx-2 ${step.id < currentStep || (step.id === 5 && currentStep === 6) ? 'bg-green-500' : 'bg-gray-200'
                                 }`} />
@@ -235,7 +235,7 @@ const OnboardingStepper: React.FC = () => {
                 ))}
             </div>
 
-            {/* Current Step Content */}
+            {/* This is the Current Step Content */}
             <div className="bg-gray-50 rounded-lg p-6 min-h-[600px]">
                 <h4 className="text-xl font-bold text-gray-900 mb-2">
                     {steps[currentStep - 1]?.title}
@@ -244,7 +244,7 @@ const OnboardingStepper: React.FC = () => {
                     {steps[currentStep - 1]?.description}
                 </p>
 
-                {/* Step 1: Personal Info Form */}
+                {/* This is the Step 1: Personal Info Form */}
                 {currentStep === 1 && (
                     <div className="space-y-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -377,12 +377,12 @@ const OnboardingStepper: React.FC = () => {
                     </div>
                 )}
 
-                {/* Step 2: Identity Verification */}
+                {/* This is the Step 2: Identity Verification */}
                 {currentStep === 2 && (
                     <IdentityVerification />
                 )}
 
-                {/* Step 3: Risk Assessment Form */}
+                {/* This is the Step 3: Risk Assessment Form */}
                 {currentStep === 3 && (
                     <div className="space-y-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -489,7 +489,7 @@ const OnboardingStepper: React.FC = () => {
                     </div>
                 )}
 
-                {/* Step 4: Investment Goals Form */}
+                {/* This is the Step 4: Investment Goals Form */}
                 {currentStep === 4 && (
                     <div className="space-y-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -595,10 +595,10 @@ const OnboardingStepper: React.FC = () => {
                     </div>
                 )}
 
-                {/* Step 5: Account Setup Form */}
+                {/* This is the Step 5: Account Setup Form */}
                 {currentStep === 5 && (
                     <div className="space-y-6">
-                        {/* Account Information */}
+                        {/* This is the Account Information */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -633,7 +633,7 @@ const OnboardingStepper: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Security Questions */}
+                        {/* This is the Security Questions */}
                         <div className="border-t pt-6">
                             <h5 className="font-medium text-gray-900 mb-4">Security Questions</h5>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -698,7 +698,7 @@ const OnboardingStepper: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Two-Factor Authentication */}
+                        {/* This is the Two-Factor Authentication */}
                         <div className="border-t pt-6">
                             <h5 className="font-medium text-gray-900 mb-4">Two-Factor Authentication</h5>
                             <div className="flex items-center mb-4">
@@ -733,7 +733,7 @@ const OnboardingStepper: React.FC = () => {
                             )}
                         </div>
 
-                        {/* Trusted Contact */}
+                        {/* This is the Trusted Contact */}
                         <div className="border-t pt-6">
                             <h5 className="font-medium text-gray-900 mb-4">Trusted Contact Information</h5>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -882,7 +882,7 @@ const OnboardingStepper: React.FC = () => {
                             <button
                                 className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
                                 onClick={() => {
-                                    // Here you would typically redirect to the dashboard or main app
+
                                     alert('Redirecting to dashboard...');
                                 }}
                             >
@@ -895,7 +895,7 @@ const OnboardingStepper: React.FC = () => {
                     </div>
                 )}
 
-                {/* Navigation buttons - hidden on completion step */}
+
                 {currentStep !== 6 && (
                     <div className="flex justify-between items-center mt-8">
                         <button
