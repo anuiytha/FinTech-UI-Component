@@ -78,7 +78,7 @@ function App() {
     <>
       <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800 text-white p-4 shadow-lg">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-xl font-bold">InvestPro Dashboard</h1>
+          <h1 className="text-xl font-bold">Relentless Returns</h1>
         </div>
       </div>
 
