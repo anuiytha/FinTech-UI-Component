@@ -107,7 +107,7 @@ const OnboardingStepper: React.FC = () => {
         { id: 3, title: "Risk Assessment", description: "Understand your risk tolerance", completed: false },
         { id: 4, title: "Investment Goals", description: "Set your financial objectives", completed: false },
         { id: 5, title: "Account Setup", description: "Complete your account", completed: false },
-        { id: 6, title: "Account Created", description: "Welcome to InvestPro", completed: false },
+        { id: 6, title: "Account Created", description: "Welcome to Relentless Returns", completed: false },
     ];
 
     const handleRiskAssessmentChange = (field: keyof RiskAssessment, value: string) => {
