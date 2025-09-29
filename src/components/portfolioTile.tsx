@@ -36,7 +36,7 @@ const PortfolioTile: React.FC<Props> = ({ data }) => {
                 </div>
             </div>
 
-            {/* This is the Performance metrics */}
+            {/* These are the Performance metrics */}
             <div className="mb-4">
                 <div className={`flex items-center justify-between p-3 rounded-lg ${isPositive ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
                     <div className="flex items-center">
@@ -56,14 +56,14 @@ const PortfolioTile: React.FC<Props> = ({ data }) => {
                 </div>
             </div>
 
-            {/* This is the Chart section */}
+            {/* These are the Chart section */}
             <div className="mb-4">
                 <div className="h-16 bg-gray-50 rounded-lg p-2">
                     <MiniChart data={data.chartData} isPositive={isPositive} />
                 </div>
             </div>
 
-            {/* This is the Additional metrics */}
+            {/* These are the Additional metrics */}
             <div className="grid grid-cols-2 gap-3 mb-3">
                 <div className="text-center p-2 bg-gray-50 rounded-lg">
                     <div className="text-xs text-gray-500">Allocation</div>
@@ -77,7 +77,7 @@ const PortfolioTile: React.FC<Props> = ({ data }) => {
                 </div>
             </div>
 
-            {/* This is the Action buttons */}
+            {/* These are the Action buttons */}
             <div className="flex gap-2 justify-center">
                 <button className="bg-blue-600 text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
                     View Details
